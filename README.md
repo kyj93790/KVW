@@ -9,6 +9,12 @@ This repository provides the official PyTorch implementation of the following pa
 ## Abstract
 > Large Vision-Language Models (LVLMs) are widely adopted for their strong multimodal capabilities, yet they raise serious concerns such as privacy leakage and harmful content generation. Machine unlearning has emerged as a promising solution for removing the influence of specific data from trained models. However, existing approaches largely rely on gradient-based optimization, incurring substantial computational costs for large-scale LVLMs. To address this limitation, we propose Knowledge Vector Weakening (KVW), a training-free unlearning method that directly intervenes in the full model without gradient computation. KVW identifies knowledge vectors that are activated during the model's output generation on the forget set and progressively weakens their contributions, thereby preventing the model from exploiting undesirable knowledge. Experiments on the MLLMU and CLEAR benchmarks demonstrate that KVW achieves a stable forget-retain trade-off while significantly improving computational efficiency over gradient-based and LoRA-based unlearning methods.
 
+## Overview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d3735af0-a30a-40a9-bacb-1b49cd45db90" width="800"/>
+</p>
+
+
 ## Cite
 ```
 @misc{kim2026knowledgevectorweakeningefficient,
