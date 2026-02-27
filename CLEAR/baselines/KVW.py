@@ -412,7 +412,7 @@ if __name__ == "__main__":
     parser.add_argument("--trainer", type=bool, default=False, help="Use HuggingFace Trainer")
 
     parser.add_argument("--phase", type=str, default="weakening") # or compute_kc_r
-    parser.add_argument("--gamma", type=float, default=0.005)
+    parser.add_argument("--gamma", type=float, default=0.02)
     parser.add_argument("--start_layer", type=int, default=1)
     parser.add_argument("--end_layer", type=int, default=25)
 
