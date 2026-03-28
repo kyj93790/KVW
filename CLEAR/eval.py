@@ -215,19 +215,12 @@ def main():
     results_data={}
     if "forget" in args.eval_list:
         print("### Evaluating Forget Set ###")
-        forget_classification_result = eval_classification(model=model, processor=processor, data_path=f"{args.data_folder}/{args.forget_cls_folder}_1",with_options=False)
+        forget_classification_result = eval_classification(model=model, processor=processor, data_path=f"{args.data_folder}/{args.forget_cls_folder}",with_options=False)
 
-        results_data["Forget Set Results 1"]={
+        results_data["Forget Set Results"]={
             "classification": forget_classification_result,
         }
-        
-    if "forget" in args.eval_list:
-        print("### Evaluating Forget Set ###")
-        forget_classification_result = eval_classification(model=model, processor=processor, data_path=f"{args.data_folder}/{args.forget_cls_folder}_2",with_options=False)
 
-        results_data["Forget Set Results 2"]={
-            "classification": forget_classification_result,
-        }
 
     if "retain" in args.eval_list:
         print("### Evaluating Retain Shared Set ###")
