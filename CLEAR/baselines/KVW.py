@@ -385,7 +385,7 @@ def main(args):
                 model,
                 forget_batch
                 )
-                gates, _ = build_knowledge_ratio_gates(kc_f, kc_r, args.gamma)
+                gates = build_knowledge_ratio_gates(kc_f, kc_r, args.gamma)
                 apply_weakening_to_model(model, gates, args.start_layer, args.end_layer, False)
             except Exception as e:
                 pass
